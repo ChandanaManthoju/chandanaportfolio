@@ -1,189 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chandana's portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/97ff0ee06b.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="image2.jpg" class="logo">
-            <ul id="sidemenu">
-                    <li><a href="#header">HOME</a></li>
-                    <li><a href="#ABOUT">ABOUT</a></li>
-                    <li><a href="#PROJECT">PROJECT</a></li>
-                    <li><a href="#CONTACT">CONTACT</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars"onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>PYTHON DEVELOPER</p>
-            <h1> Hello, I'm <span>Chandana Manthoju</span><br>From Warangal.<br><span>Final Year Engineering Student</span><br><span>From Vaagdevi Engineering College.</span></h1>
-        </div>
-    </div>
-</div>
-<!-- -----------------------ABOUT------------------- -->
-<div id="ABOUT">
-    <div class="container">
-        <div class="row">
-            <div class="ABOUT-col-1">
-                <img src="chandhu.png.jpg">
-            </div>
-            <div class="ABOUT-col-2">
-                <h1 class="sub-title">ABOUT ME</h1>
-                <h3>I am a hard-working and driven individual who isn't afraid to face a challenge. I'm passionate about my work and I know how to get my job done.
-                    I would describe myself as an open and honest person and tries to be fair in everything I do.
-                    I am ambitious and driven. I thrive on challenges and constantly set goals for my self, So I have something to strive towards.
-                    I am not comfortable with settling,I am always looking for an opportunity to do a better and achieve greatness.
-                </h3>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('SKILLS')">SKILLS </p>
-                    <p class="tab-links " onclick="opentab('EDUCATION')">EDUCATION</P>
-                    <p class="tab-links " onclick="opentab('HOBBIES')">HOBBIES</p>
-                </div>
-                <div class="tab-contents active-tab" id="SKILLS">
-                    <ul>
-                        <li><span>PROGRAMMING LANGUAGES:</span><br>PYTHON<br>JAVA<br>SQL<br>C++<br>HTML<br>CSS</li>
-                        <li><span>SOFT SKILLS:</span><br>EFFECTIVE COMMUNICATION AND COLLABORATION<br>ACTIVE LISTENING<br>TEAM WORK SKILLS<br>TIME MANAGEMENT<br>PROBLEM SOLVING</li>
-                        <li><span>FAMILIAR LANGUAGES:</span><br>ENGLISH<br>TELUGU<br>HINDI</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="EDUCATION">
-                    <ul>
-                        <li><span>2021-2024:</span><br>BTECH FROM VAAGDEVI ENGINEERING COLLEGE<br>CSE STREAM<br>GPA=7.0</li>
-                        <li><span>2018-2021:</span><br>DIPLOMA FROM VMR POLYTECHNIC COLLEGE<br>CSE STREAM<br>GPA=8.3</li>
-                        <li><span>2018:</span><br>SSC FROM BLUE BELLS HIGH SCHOOL<br>GPA=8.3</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="HOBBIES">
-                    <ul>
-                        <li><span>MOTIVATING MYSELF</span></li>
-                        <li><span>COOKING</span></li>
-                        <li><span>LISTENING MUSIC</span></li>
-                        <li><span>PLAYING CHESS</span></li>
-                        <li><span>PHOTOGRAPHY</span></li>
-                        <li><span>EVOLVE MY MINDSET</span></li>
-                        <li><span>SINGING</span></li>
-                        <li><span>TO BUILD KNOWLEDGE</span></li>
-                    </ul>
-                </div>
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
 
+  <body>
+    <section class="hero-section">
 
-            </div>
-        </div>
-    </div>
-</div>
-<!--------------------services  skipped when u have them place it------------------------->
-<!----------------------project------------------>
-<div id="PROJECT">
-    <div class="container">
-        <h1 class="sub-title">MY PROJECTS</h1>
-        <div class="PROJECT-LIST">
-            <div>
-                <h2>SNAKE WATER GUN GAME</h2>
-                <p>Snake Water Gun is one of the famous two-player game played by many people.
-                It is a hand game in which the player randomly chooses any of the three forms i.e. snake,water and Gun.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <h2>CHANDHU'S VIRTUAL ASSISTANCE</h2>
-                <p>Virtual desktop assistant is an awesome thing. If you want your machine to run on your command like Jarvis did for Tony..</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <h2>DRINK WATER NOTIFICATION SYSTEM</h2>
-                <p>The notification system that reminds the user to drink water after a fixed interval of time. 
-                    The program coded below first asks its user to input time interval for notification.
-                    Then until user ends script, it sends repeated notifications to user to drink water.
-                    After each interval it creates a text file which contains a log of when user drank water.</p>
-                <a href="#">Learn more</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!----------------------------------contact------------------------------------->
-<div id="CONTACT">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">CONTACT ME</h1>
-                <p> <i class="fa-solid fa-paper-plane"></i>  chandanamanthoju202003@gmail.com</p>
-                <p> <i class="fa-solid fa-square-phone"></i> +91 9705128751</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <a href="chandhuResume.pdf" download class="btn btn2">  Download Resume</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="your Name" required>
-                    <input type="email" name="Email" placeholder="your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">SUBMIT</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-</div>
+      <nav class="navbar">
+        <h2>chand's Burger</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="hero-text">
+        <h2>Best burgers in the world.</h2>
+        <p>Tastiest burger you will ever taste.</p>
+        <a href="#">Order Now</a>
+      </div>
+    </section>
+  </body>
 
-
-
-
-
-
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
-<script>
-    var sidemenu=document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right="0";
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby6T52AnvYNxuwTnR9q7NRIXpgF2ohKfG94sAEvCkOp84_4bBIijAba4e2HCKBCmIWRng/exec '
-    const form = document.forms['submit-to-google-sheet']
-    const msg=document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML="message sent sucessfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-    
-</body>
 </html>
